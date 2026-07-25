@@ -1,6 +1,6 @@
 """
 ================================================================================
- FIREFLY ALGORITHM - Corrected Pedagogical Implementation (Python)
+ FIREFLY ALGORITHM - Pedagogical Implementation (Python)
 ================================================================================
  Companion to: "Introducing the Firefly Algorithm (FA) to K-12 and
                 Postgraduate STEM Education Using Block-Based and Textual
@@ -12,10 +12,7 @@
    2) FireflyAlgorithmSimplified - single-attractor, mirrors the Scratch
                                    project block-for-block; O(n)
 
- The fix over FA_v4_final is that the absorption coefficient gamma now
- actually modulates the attraction strength instead of being declared
- but unused.
-================================================================================
+ ================================================================================
 """
 
 import numpy as np
@@ -78,7 +75,7 @@ class FireflyAlgorithmCanonical:
 
 
 class FireflyAlgorithmSimplified:
-    """Single-attractor FA - mirrors the corrected Scratch (v5) project."""
+    """Single-attractor FA - mirrors the Scratch project."""
 
     def __init__(self, objective_func, n_fireflies=20, dim=2,
                  bounds=(-5.0, 5.0), max_iter=100,
